@@ -1,0 +1,16 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    background: white;
+    box-shadow: 0 0px 10px #4b4b4b;
+}
+
+  
+  .name{
+    display: flex;
+  }
+  .name div{
+    color: blue;
+  }
+
+
