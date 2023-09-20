@@ -135,6 +135,8 @@
     $("#carousel-thumbs").carousel(thumbNum);
   });
 
-  
+  $(window).resize(function(){
+    $(".grid").masonry().masonry("reloadItems");
+ });
 
 })(jQuery);
