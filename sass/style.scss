@@ -645,11 +645,11 @@ section {
     }
   }
 
-/*   @media (min-width: 1200px) {
-    .container {
+  @media (min-width: 1200px) {
+    .project-content .container {
       max-width: 1381px;
     }
-  } */
+  }
 
   @media (min-width: 992px) and (max-width:1299px) {
     .container {
@@ -659,15 +659,6 @@ section {
     }
   }
 
-  @media (min-width: 768px) and (max-width:991px) {
-    .about-text p{
-      font-size: 16px;
-      line-height: 1.3;
-    }
-
-
-    
-  }
 
 
 
