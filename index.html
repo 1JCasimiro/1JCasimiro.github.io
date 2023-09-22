@@ -61,7 +61,7 @@
   <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-8 col-xl-7 d-lg-flex align-items-center">
+        <div class="col-sm-12 col-md-6 col-lg-7 d-lg-flex align-items-center">
           <div class="about-text">
             <h1 class="my-name">
               <span class="mr-2">Hello, I'm</span>
@@ -70,19 +70,45 @@
               </div>
             </h1>
             <p>I'm a Front-End Developer, proficient in HTML5, CSS3, JavaScript, and experience in front-end
-              libraries like React.In addition to my front-end skills, I have some experience in backend development.<br><br>
+              libraries like React. In addition to my front-end skills, I have some experience in backend
+              development.<br><br>
               I'm used to work closely to the designers and back-end developers, having a keen eye to detail and good
               critical thinking.<br><br>
-              Always focused on delivering seamless and enjoyable experiences for the end user across all devices!<br><br>
-            
-              Additionally, I am familiar with WordPress, and I possess some knowledge of other programming languages such as Java, Python, and C++.</p>
+              <!-- Always focused on delivering seamless and enjoyable experiences for the end user across all
+              devices!<br><br> -->
+            </p>
+            <div class="contact">
+              <div class="contact-title">
+                <i class="bi bi-telephone-fill"></i> Phone
+                <div class="contact-information">
+                  +351 929007667
+                </div>
+              </div>
 
-
+              <div class="contact-title">
+                <i class="bi bi-envelope-fill"></i> Email
+                <div class="contact-information">
+                  joaocasimiro9815@gmail.com
+                </div>
+              </div>
+              <div class="contact-title">
+                <i class="bi bi-geo-alt-fill"></i> Address
+                <div class="contact-information">
+                  Lisbon, Portugal
+                </div>
+              </div>
+            </div>
+            <div class="custom-btn-group mt-sm-2 mt-lg-4">
+              <a href="cv/cv-joaocasimiro.pdf" download class="btn mr-lg-2 custom-btn"><i
+                  class="bi bi-file-pdf-fill"></i>
+                Download Resume</a>
+              <a href="https://www.linkedin.com/in/jo%C3%A3o-casimiro-3332b5223/" target="_blank"
+                class="btn mr-lg-2 custom-btn linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            </div>
 
           </div>
         </div>
-        <div class="col-0 col-xl-1"></div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-5">
           <div class="about-image svg">
             <img src="images/eu.webp" class="img-fluid" alt="svg image">
           </div>
@@ -92,33 +118,7 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <div class="contact">
-            <div class="contact-title">
-              <i class="bi bi-telephone-fill"></i> Phone
-              <div class="contact-information">
-                +351 929007667
-              </div>
-            </div>
 
-            <div class="contact-title">
-              <i class="bi bi-envelope-fill"></i> Email
-              <div class="contact-information">
-                joaocasimiro9815@gmail.com
-              </div>
-            </div>
-            <div class="contact-title">
-              <i class="bi bi-geo-alt-fill"></i> Address
-              <div class="contact-information">
-                Lisbon, Portugal
-              </div>
-            </div>
-          </div>
-          <div class="custom-btn-group mt-sm-2 mt-lg-4">
-            <a href="cv/cv-joaocasimiro.pdf" download class="btn mr-lg-2 custom-btn"><i class="bi bi-file-pdf-fill"></i>
-              Download Resume</a>
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-casimiro-3332b5223/" target="_blank"
-              class="btn mr-lg-2 custom-btn linkedin"><i class="bi bi-linkedin"></i> LinkedIn</a>
-          </div>
         </div>
       </div>
     </div>
@@ -287,18 +287,18 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="text-center col-12">
+        <div class="text-center col-12 controls">
           <div class="custom-btn-group button-group filters-button-group">
-            <button class="button mb-sm-3 custom-btn is-checked" data-filter="*">Show All</button>
-            <button class="button mb-sm-3 custom-btn" data-filter=".front">Front-end</button>
-            <button class="button mb-sm-3 custom-btn" data-filter=".responsive">Responsive</button>
-            <button class="button mb-sm-3 custom-btn" data-filter=".academic">Academic</button>
+            <button class="button mb-sm-3 custom-btn control mixitup-control-active" data-filter="all">Show All</button>
+            <button class="button mb-sm-3 custom-btn control" data-filter=".front">Front-end</button>
+            <button class="button mb-sm-3 custom-btn control" data-filter=".responsive">Responsive</button>
+            <button class="button mb-sm-3 custom-btn control" data-filter=".academic">Academic</button>
             <!-- <button class="button mb-sm-3 custom-btn" data-filter=".gif">GIF's</button> -->
 
           </div>
-          <div class="grid">
+          <div id="test" data-ref="test">
 
-            <div class="element-item transition front responsive col-sm-12 col-md-6 col-lg-4">
+            <div class="mix front responsive col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-sitecna.html">
                 <img src="images/portfolio/sitecna.webp" alt="">
                 <h3 class="name">Sitecna
@@ -307,7 +307,7 @@
                 </h3>
               </a>
             </div>
-            <div class="element-item transition front responsive col-sm-12 col-md-6 col-lg-4">
+            <div class="mix transition front responsive col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-fontelusa.html">
                 <img src="images/portfolio/fonte.webp" alt="">
                 <h3 class="name">Fonte Lusa
@@ -316,7 +316,7 @@
                 </h3>
               </a>
             </div>
-            <div class="element-item transition front responsive col-sm-12 col-md-6 col-lg-4">
+            <div class="mix transition front responsive col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-ilidio.html">
                 <img src="images/portfolio/ilidio1.webp" alt="">
                 <h3 class="name">Ilídio da Mota
@@ -324,7 +324,8 @@
                   <span>Home Interior</span>
                 </h3>
               </a>
-            </div><div class="element-item transition front responsive col-sm-12 col-md-6 col-lg-4">
+            </div>
+            <div class="mix transition front responsive col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-sistema4.html">
                 <img src="images/portfolio/sistema.webp" alt="">
                 <h3 class="name">Sistema4
@@ -333,9 +334,9 @@
                 </h3>
               </a>
             </div>
-            
 
-            <div class="element-item transition front col-sm-12 col-md-6 col-lg-4">
+
+            <div class="mix transition front col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-vigobloco.html">
                 <img src="images/portfolio/vigobloco.webp" alt="">
                 <h3 class="name">Vigobloco
@@ -344,7 +345,7 @@
                 </h3>
               </a>
             </div>
-            <div class="element-item transition responsive col-sm-12 col-md-6 col-lg-4">
+            <div class="mix transition responsive col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-foreststone.html">
                 <img src="images/portfolio/forest1.webp" alt="">
                 <h3 class="name">Forest Stone
@@ -353,7 +354,7 @@
                 </h3>
               </a>
             </div>
-            <div class="element-item transition front col-sm-12 col-md-6 col-lg-4">
+            <div class="mix transition front col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-digidelta.html">
                 <img src="images/portfolio/digidelta1.webp" alt="">
                 <h3 class="name">Digidelta
@@ -363,7 +364,7 @@
               </a>
             </div>
 
-<div class="element-item transition front responsive col-sm-12 col-md-6 col-lg-4">
+            <div class="mix transition front responsive col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-bioseivas.html">
                 <img src="images/portfolio/lupa.webp" alt="">
                 <h3 class="name">Bio Seivas
@@ -373,9 +374,9 @@
               </a>
             </div>
 
-            
 
-            <div class="element-item transition front responsive col-sm-12 col-md-6 col-lg-4">
+
+            <div class="mix transition front responsive col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-fonsecasilva.html">
                 <img src="images/portfolio/fonsecasilva1.webp" alt="">
                 <h3 class="name">Fonseca & Silva
@@ -387,7 +388,7 @@
 
 
 
-            <div class="element-item transition responsive col-sm-12 col-md-6 col-lg-4">
+            <div class="mix transition responsive col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-vidroscerejo.html">
                 <img src="images/portfolio/vidroscerejo1.webp" alt="">
                 <h3 class="name">Vidros Cerejo
@@ -397,7 +398,7 @@
               </a>
             </div>
 
-            <div class="element-item transition responsive col-sm-12 col-md-6 col-lg-4">
+            <div class="mix transition responsive col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-derovo.html">
                 <img src="images/portfolio/derovo1.webp" alt="">
                 <h3 class="name">Derovo
@@ -406,7 +407,7 @@
                 </h3>
               </a>
             </div>
-            <div class="element-item transition front responsive col-sm-12 col-md-6 col-lg-4">
+            <div class="mix transition front responsive col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-casape.html">
                 <img src="images/portfolio/casape1.webp" alt="Casape">
                 <h3 class="name">Casape
@@ -417,7 +418,7 @@
             </div>
 
 
-            <!--             <div class="element-item transition gif col-sm-12 col-md-6 col-lg-4">
+            <!--             <div class="mix transition gif col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-mycamp.html">
                 <img src="images/portfolio/mycamp.webp" alt="">
                 <h3 class="name">MyCamp
@@ -427,7 +428,7 @@
               </a>
             </div>
 
-            <div class="element-item transition gif col-sm-12 col-md-6 col-lg-4">
+            <div class="mix transition gif col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-mycamps.html">
                 <img src="images/portfolio/mycamp.webp" alt="">
                 <h3 class="name">MyCamp
@@ -437,7 +438,7 @@
               </a>
             </div> -->
 
-            <!--             <div class="element-item transition gif col-sm-12 col-md-6 col-lg-4">
+            <!--             <div class="mix transition gif col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="#">
                 <img src="images/portfolio/masterchef.webp" alt="">
                 <h3 class="name">MasterChef
@@ -447,7 +448,7 @@
               </a>
             </div> -->
 
-            <div class="element-item transition academic col-sm-12 col-md-6 col-lg-4">
+            <div class="mix transition academic col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-teamark.html">
                 <img src="images/portfolio/teamark1.webp" alt="">
                 <h3 class="name">Teamark
@@ -457,7 +458,7 @@
               </a>
             </div>
 
-            <div class="element-item transition academic col-sm-12 col-md-6 col-lg-4">
+            <div class="mix green transition academic col-xs-12 col-sm-12 col-md-6 col-lg-4">
               <a href="portfolio-tecdrill.html">
                 <img src="images/portfolio/tecrill1.webp" alt="">
                 <h3 class="name">Tecdrill
@@ -467,7 +468,9 @@
               </a>
             </div>
 
+
           </div>
+          
         </div>
       </div>
     </div>
@@ -694,7 +697,7 @@
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/smoothscroll.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
@@ -760,7 +763,12 @@
 
     // and now initialize it
     swiperEl.initialize();
+
+
+    
   </script>
+
+
 
 
 

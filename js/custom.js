@@ -51,27 +51,6 @@
 
 
 
-/*   $('#skills').owlCarousel({
-
-    responsive: {
-      0: {
-        items: 2
-      },
-      415: {
-        items: 2
-      },
-      600: {
-        items: 4
-
-      },
-      1199: {
-        items: 4
-      },
-      1200: {
-        items: 8
-      }
-    }
-  }); */
 
 
   $('.play').on('click', function () {
@@ -83,31 +62,9 @@
 
 
 
-  // init Isotope
 
-  $(function () {
-    var $grid = $('.grid').isotope({
-      itemSelector: '.element-item',
-      layoutMode: 'fitRows',
-      easing: "linear",
-      queue: true,
-      duration: 500,
-    });
-    // bind filter button click
-    $('.filters-button-group').on('click', 'button', function () {
-      var filterValue = $(this).attr('data-filter');
 
-      $grid.isotope({ filter: filterValue });
-    });
-    // change is-checked class on buttons
-    $('.button-group').each(function (i, buttonGroup) {
-      var $buttonGroup = $(buttonGroup);
-      $buttonGroup.on('click', 'button', function () {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $(this).addClass('is-checked');
-      });
-    });
-  });
+
 
 
 
@@ -135,6 +92,29 @@
     $("#carousel-thumbs").carousel(thumbNum);
   });
 
-  
+  var container = document.querySelector('[data-ref="test"]');
+
+  var mixer = mixitup(container, {
+      animation: {
+          duration: 350,
+          queueLimit: 1,
+          easing: 'ease-in-out',
+          clampHeight: false
+      },
+  });
+
+
+
+  function filterByString(searchValue) {
+      if (searchValue) {
+          // Use an attribute wildcard selector to check for matches
+
+          mixer.filter('[class*="' + searchValue + '"]');
+      } else {
+          // If no searchValue, treat as filter('all')
+
+          mixer.filter('all');
+      }
+  }
 
 })(jQuery);
