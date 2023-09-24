@@ -174,7 +174,7 @@ section {
   transition: all 500ms ease;
 }
 
-.element-item a:hover {
+.mix a:hover {
   transform: scale(1.1);
   color: #ff5e00 !important;
 }
@@ -226,7 +226,7 @@ section {
 }
 .timeline .description {
   font-size: 16px;
-  text-align: justify;
+  /*     text-align: justify; */
   color: #5b5b5b;
 }
 .timeline .description li {
@@ -369,6 +369,10 @@ section {
   .col-0 {
     display: none;
   }
+  .years, .where, .role, .description, .location {
+    padding-left: 40px;
+    /*     border-left: 1px solid red    ; */
+  }
   .contact {
     flex-direction: column;
     margin-top: 25px;
@@ -490,10 +494,8 @@ section {
   }
 }
 @media (max-width: 575px) {
-  .custom-btn-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .about-text .linkedin {
+    margin-top: 20px;
   }
 }
 @media (max-width: 700px) {
@@ -519,4 +521,20 @@ section {
 #test {
   display: flex;
   flex-wrap: wrap;
+}
+
+.about-contact-responsive {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-contact-responsive {
+    display: flex;
+  }
+  .about-contact-responsive .contact {
+    flex-direction: row;
+  }
+  .about-text .contact, .about-text .custom-btn-group {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -285,7 +285,7 @@ section {
 
   .description {
     font-size: 16px;
-    text-align: justify;
+/*     text-align: justify; */
     color: $body-font-color;
 
     li {
@@ -463,10 +463,16 @@ section {
 }
 
 @media (max-width: 991px) {
+  
+  
+  
   .col-0 {
     display: none;
   }
-  
+  .years, .where, .role, .description, .location{
+    padding-left: 40px;
+/*     border-left: 1px solid red    ; */
+  }
 
   .contact {
     flex-direction: column;
@@ -490,7 +496,7 @@ section {
 
   .timeline-decoration#center {
     width: auto;
-
+    
     .line {
       margin-left: 0;
     }
@@ -627,10 +633,8 @@ section {
 
 
   @media (max-width: 575px) {
-    .custom-btn-group {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .about-text .linkedin {
+      margin-top: 20px;
     }
   }
 
@@ -668,7 +672,21 @@ section {
 }
 
 
+.about-contact-responsive{
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width:991px){
+
+  .about-contact-responsive{
+    display: flex;
+    .contact{
+      flex-direction: row;
+    }
+  }
+  .about-text .contact,.about-text .custom-btn-group{
+    display: none;
+  }
 
 
-
-
+}
